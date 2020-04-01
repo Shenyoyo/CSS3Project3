@@ -171,16 +171,50 @@
         color: #065bBA;
     }
     /* ------------------Navigation Bar------------------ */
-    #navigation-bar{
+    nav{
         width: 100%;
         height: 35px;
-        padding-top:20px ;
-    
+        padding-top:12px ;
     }
 
     .tb-border{
-        border-top:1px solod #ddd  ;
-        border-bottom: 1px solod #ddd ;
+        border-top:1px solid #ddd ;
+        border-bottom:1px solid #ddd ;
+    }
+
+    #navigation-bar{
+        width: 100%;
+        height: 35px;
+        box-sizing: border-box;
+
+        padding: 10px 0 11px 0;
+    }
+    .li-space{
+        float: left;
+        padding: 0 2%;
+    }
+    .divider{
+        float: left;
+        width: 1px;
+        height: 24px;
+        background-color: #ddd;
+
+        margin: -5px 20px 0 10px;
+    }
+    .active a {
+        font-weight: bold;
+
+        padding-right:0 !important;
+        padding-left:0 !important;
+        padding-bottom: 7px !important;
+        border-bottom: 2px solid #555;
+
+
+    }
+    .active a:hover{
+        text-decoration: none !important;
+        color: #555 !important;
+
     }
 
 
@@ -262,16 +296,46 @@
      <nav class="clearfix setBGColor" >
          <div class="container">
              <ul id="navigation-bar" class="navbar tb-border">
-                <li class="navItem"><a href="#">Following</a></li>
-                <li class="navItem"><a href="#">Today</a></li>
-                <li class="navItem"><a href="#">Fashion</a></li>
-                <li class="navItem"><a href="#">Electronics</a></li>
-                <li class="navItem"><a href="#">Collectibles & Art</a></li>
-                <li class="navItem"><a href="#">Home & Garden</a></li>
-                <li class="navItem"><a href="#">Sporting Goods</a></li>
-                <li class="navItem"><a href="#">Motors</a></li>
-                <li class="navItem"><a href="#">Daily Deals</a></li>
+                <li class="navItem li-space no-border"><a href="#">Following</a></li>
+                <li class="navItem li-space no-border active"><a href="#">Today</a></li>
+                <div class="divider">
+
+                </div>
+                <li class="navItem li-space no-border"><a href="#">Fashion</a></li>
+                <li class="navItem li-space no-border"><a href="#">Electronics</a></li>
+                <li class="navItem li-space no-border"><a href="#">Collectibles & Art</a></li>
+                <li class="navItem li-space no-border"><a href="#">Home & Garden</a></li>
+                <li class="navItem li-space no-border"><a href="#">Sporting Goods</a></li>
+                <li class="navItem li-space no-border"><a href="#">Motors</a></li>
+                <li class="navItem li-space no-border"><a href="#">Daily Deals</a></li>
              </ul>
+
+             <!-- ------------------Advertisement ------------------->
+
+             <section  id="adselect" class="clearfix setBGColor">
+                 <div class="container">
+                     <div id="column1">
+                         <div >
+                             <img id="ad1" src="img/ad1.png" alt="ad1" width="876px">
+                         </div>
+
+                     </div>
+
+                     <div id="column2">
+
+                         <div>
+                             <img id="ad2" src="img/ad2.jpg" alt="ad2" width="250px">
+                         </div>
+
+                         <div>
+                             <img id="ad3" src="img/ad3.jpg" alt="ad3"  width="250px">
+                         </div>
+
+                     </div>
+
+                 </div>
+
+             </section>
 
         
         
