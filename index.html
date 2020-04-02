@@ -217,6 +217,195 @@
 
     }
 
+    /* ------------------Advertisement -------------------*/
+    #adSection{
+    
+        height: 293px;
+        padding:32px 0;
+
+    }
+    .add-border{
+        border: 1px solid #bbb;
+
+        box-sizing: border-box;
+
+    }
+
+    #column1{
+        float: left;
+        height: 293px;
+    }
+    #column2{
+        position: relative;
+        float: left;
+        height: 293px;
+        width: 324px;
+    }
+    #ad2{
+        position: absolute;
+        top:0;
+        right: 0;
+      
+    }
+    #ad3{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    /* ------------------Porduction Section ------------------- */
+
+    #productSection{
+
+        width: 100%;
+        height: 647px;
+
+        padding-bottom: 75px;
+        overflow: hidden;
+    }
+    .hero-heading{
+        height: 45px;
+        border-bottom:1px solid #ddd ;
+
+        font-weight: 400;
+        color: #555;
+
+    }
+
+    #show-product{
+
+        width: 100%;
+        height: 602.5px;
+    }
+
+    .product-section{
+
+        float: left;
+        width: 585px;
+        height:602.5px
+
+    }
+
+    .product-photo{
+
+        width: 585px;
+        height: 360px;
+
+    }
+
+    .photo-column1{
+
+        float: left;
+
+        width: 440px;
+        height: 360px;
+        
+        border-width: 2px 0 2px 2px;
+        border-color: #ddd;
+        border-style: solid;
+
+        box-sizing: border-box;
+        overflow: hidden;
+
+    }
+
+    #photo1{
+        height: 360px;
+        position: relative;
+        top:-2px;
+        left: -100px;
+    }
+
+    .photo-column2{
+        float: left;
+
+        width: 120px;
+        height: 360px;
+
+        box-sizing: border-box;
+        overflow: hidden;
+
+
+    }
+
+    .thumb{
+        width: 120px;
+        height: 120px;
+
+        border-width: 2px 2px 0px 2px;
+        border-color: #ddd;
+        border-style: solid;
+
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .thumb:last-child{
+        border:2px solid #ddd;
+
+    }
+
+    .thumbnail{
+       height: 120px;
+    }
+
+    #thimbnail-fix{
+        position: relative;
+        top: 5px;
+        right: 10px;
+    }
+
+    /* -- ------------------Article ------------------- */
+    article{
+        color: #333333;
+    }
+
+    .title{
+
+        font-weight: 400;
+        font-size: 26px;
+
+        margin: 18px 0 10px 0;
+    }
+
+    .description-container{
+        width: 370px;
+        height: 118px;
+
+    }
+    .product-details{
+
+        font-weight: 400;
+        font-size: 15px;
+
+        line-height: 1.5em;
+
+    }
+
+    .read-more{
+
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url("img/paper.png");
+        background-size: cover;
+
+        vertical-align: middle;
+    }
+    .left-col{
+        float: left;
+        width: 440px;
+    }
+
+    .right-col{
+
+        float: right;
+        width: 140px;
+
+    
+    }
+
+
 
 
 
@@ -310,48 +499,109 @@
                 <li class="navItem li-space no-border"><a href="#">Daily Deals</a></li>
              </ul>
 
-             <!-- ------------------Advertisement ------------------->
-
-             <section  id="adselect" class="clearfix setBGColor">
-                 <div class="container">
-                     <div id="column1">
-                         <div >
-                             <img id="ad1" src="img/ad1.png" alt="ad1" width="876px">
-                         </div>
-
-                     </div>
-
-                     <div id="column2">
-
-                         <div>
-                             <img id="ad2" src="img/ad2.jpg" alt="ad2" width="250px">
-                         </div>
-
-                         <div>
-                             <img id="ad3" src="img/ad3.jpg" alt="ad3"  width="250px">
-                         </div>
-
-                     </div>
-
-                 </div>
-
-             </section>
-
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         </div>
      </nav>
+
+        <!-- ------------------Advertisement ------------------->
+
+        <section  id="adSection" class="clearfix setBGColor">
+            <div class="container">
+                <div id="column1" >
+                    <div >
+                        <img id="ad1" class="add-border" src="img/ad1.png" alt="ad1" width="870px">
+                    </div>
+
+                </div>
+
+                <div id="column2">
+
+                    <div>
+                        <img id="ad2" class="add-border" src="img/ad2.jpg" alt="ad2" width="230px">
+                    </div>
+
+                    <div>
+                        <img id="ad3" class="add-border" src="img/ad3.jpg" alt="ad3"  width="230px">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ------------------Porduction Section ------------------->
+        <section id="productSection" class="clearfix setBGColor">
+            <div class="container">
+                <h2 class="hero-heading">Today's Featured Collection</h2>
+
+                <div id="show-product" >
+                    <div class="product-section">
+                        <div class="product-photo">
+                            <div class="photo-column1">
+                                <img id="photo1" src="img/photo1.png" alt="">
+
+                            </div>
+
+                            <div class="photo-column2">
+
+                                <div class="thumb">
+                                    <img id="thimbnail-fix" class="thumbnail" src="img/thumbnail1_1.png" alt="">
+                                </div>
+
+                                <div class="thumb">
+                                    <img class="thumbnail" src="img/thumbnail1_2.png" alt="">
+                                </div>
+
+                                <div class="thumb">
+                                    <img class="thumbnail" src="img/thumbnail1_3.png" alt="">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                          <!-- ------------------Article ------------------->
+                        <article>
+                            <div class="left-col">
+                                <h3 class="title">In a Flash</h3>
+
+                                <div class="description-container">
+                                    <p class="product-details">
+                                        Make new memories with instant cameras
+                                         like a Fuji Instax Mini 25, a Leica Sofort, or a
+                                          Polaroid instant-print camera-plus a 
+                                          Lomo'Instant Automat from Lomography. 
+
+                                      <a href="#" title="閱讀更多">
+                                         <span class="read-more"></span>
+                                      </a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div  class="right-col">
+
+                                <ul class="rigth-col-container right-col-text"> 
+                                    <li  class="right-col-item">15 item</li>
+                                    <li  class="right-col-item">by ebaytecheditor</li>
+                                    <li  class="right-col-item"><a class="active-link" href="#">Shop now</a></li>
+                                </ul>
+
+                            </div>
+
+                        </article>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
 
 
 
