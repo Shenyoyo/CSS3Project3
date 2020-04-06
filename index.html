@@ -274,6 +274,8 @@
 
     #show-product{
 
+        position: relative;
+
         width: 100%;
         height: 602.5px;
     }
@@ -403,6 +405,68 @@
         width: 140px;
 
     
+    }
+    .right-col-text{
+      
+        text-align: center;
+        color: #333333;
+        font-size: 14px;
+        font-weight: bolder;
+
+
+    }
+    .right-col-container{
+        padding-left: 8px;
+        padding-right: 8px;
+
+        margin: 0;
+
+        list-style-type: none;
+
+    }
+
+    .right-col-item{
+        padding: 18px 0;
+        
+        border-bottom: 1px solid #ddd;
+
+    }
+    .right-col-item:last-child{
+    
+        border:0
+    }
+
+    .right-col-item a:link{
+        text-decoration: none;
+        color: #0654BA;
+
+    }
+    
+    .right-col-item a:hover{
+        text-decoration: underline;
+        color: #0654BA;
+
+    }
+
+    /* ------------------------Product2------------------  */
+
+    .right-section{
+
+        position: absolute;
+        right: 0;
+
+    }
+
+    #photo2{
+        height: 420px;
+        position: relative;
+        right:15px;
+        bottom: 30px;
+    }
+    #thumbnail-adjust{
+        position: relative;
+        right: 15px;
+        bottom: 5px;
     }
 
 
@@ -535,6 +599,9 @@
                 <h2 class="hero-heading">Today's Featured Collection</h2>
 
                 <div id="show-product" >
+
+                    <!-- ------------------ Product1 ------------------- -->
+                    
                     <div class="product-section">
                         <div class="product-photo">
                             <div class="photo-column1">
@@ -582,7 +649,7 @@
 
                             <div  class="right-col">
 
-                                <ul class="rigth-col-container right-col-text"> 
+                                <ul class="right-col-container right-col-text"> 
                                     <li  class="right-col-item">15 item</li>
                                     <li  class="right-col-item">by ebaytecheditor</li>
                                     <li  class="right-col-item"><a class="active-link" href="#">Shop now</a></li>
@@ -592,9 +659,73 @@
 
                         </article>
 
+                    </div>
 
+                    <!-- ------------------ Product1 End -------------------->
+
+                    <!-- ------------------ Product2  -------------------->
+
+                     
+                    <div class="product-section right-section">
+                        <div class="product-photo">
+                            <div class="photo-column1">
+                                <img id="photo2" src="img/photo2.png" alt="photo2">
+
+                            </div>
+
+                            <div class="photo-column2">
+
+                                <div class="thumb">
+                                    <img id="thumbnail-adjust" class="thumbnail" src="img/thumbnail2_1.png" alt="thumbnail2_1">
+                                </div>
+
+                                <div class="thumb">
+                                    <img class="thumbnail" src="img/thumbnail2_2.png" alt="thumbnail2_2">
+                                </div>
+
+                                <div class="thumb">
+                                    <img class="thumbnail" src="img/thumbnail2_3.png" alt="img/thumbnail2_3">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                          <!-- ------------------Article ------------------->
+                        <article>
+                            <div class="left-col">
+                                <h3 class="title">Culinary Cuteness</h3>
+
+                                <div class="description-container">
+                                    <p class="product-details">
+                                        Find adorably playful kitchen gadgets like a kipik porcupine toothpick holder,
+                                         a Suck UK tea infuser shaped like a goldfish, or a ship-shaped butter dish from
+                                          Alessi-plus a pair of Red Riding Hood and Big Bad Wolf salt and 
+                                      <a href="#" title="閱讀更多">
+                                         <span class="read-more"></span>
+                                      </a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <div  class="right-col">
+
+                                <ul class="right-col-container right-col-text"> 
+                                    <li  class="right-col-item">15 item</li>
+                                    <li  class="right-col-item">by ebaytecheditor</li>
+                                    <li  class="right-col-item"><a class="active-link" href="#">Shop now</a></li>
+                                </ul>
+
+                            </div>
+
+                        </article>
 
                     </div>
+
+                    <!-- ---------------------Product 2 End-------------------- -->
+
+
 
                 </div>
             </div>
